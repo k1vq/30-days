@@ -64,3 +64,4 @@ for x in range(-10, 11):
     print(f"x = {x}, y = {value}")
     if value == 0:
         print("👉 y = 0 when x =", x)
+
