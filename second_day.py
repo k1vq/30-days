@@ -7,21 +7,21 @@ complex_number = 1j
 
 base = int(input("Enter base: "))
 new_height = int(input("Enter new height: "))
-area = int((base * new_height) / 2)
+area = 0.5 * base * new_height
 print(f"The area of the triangle is {area}")
 
 side_a = int(input("Enter side a: "))
 side_b = int(input("Enter side b: "))
 side_c = int(input("Enter side c: "))
 perimeter = side_a + side_b + side_c
-print(f"The sides of the triangle is {perimeter}")
+print(f"The perimeter of the triangle is {perimeter}")
 
 length = int(input("Enter length: "))
 width = int(input("Enter width: "))
 area = length * width
 perimeter_second = 2 * (length + width)
 
-print(f"The perimeter of the triangle is {perimeter_second} and the area of the triangle is {area}")
+print(f"The perimeter of the rectangle is {perimeter_second} and the area of the rectangle is {area}")
 
 r = float(input("Enter radius: "))
 pi = 3.14
@@ -61,7 +61,57 @@ def y(x):
 
 for x in range(-10, 11):
     value = y(x)
-    print(f"x = {x}, y = {value}")
+    print(f"x = {x}, y = {value}") # Выводим пары (x, y) и проверяем, при каком x значение функции равно нулю
     if value == 0:
-        print("👉 y = 0 when x =", x)
+        print("👉 y = 0 when x =", x) # Перебираем x от -10 до 10, вычисляем y = x^2 + 6x + 9 для каждого значения
 
+python = len("python")
+dragon = len("dragon")
+
+print(python != dragon)
+
+print("on" in ("python" and "dragon")) # skobki postavit' ewe # print("on" in "python" and "on" in "dragon")
+
+print("jargon" in "I hope this course is not full of jargon")
+
+print("on" not in ("python" and "dragon")) # print("on" not in "python" and "on" not in "dragon")
+
+float_python = float(len("python"))
+
+print(str(float_python))
+
+number = 10
+
+if number % 2 == 0:
+    print("The number is even")
+else:
+    print("The number is odd")
+
+print((7 // 3) == int(2.7))
+
+print(type("10") == type(10))
+
+print(int("9.8") == 10)
+
+hours = int(input("Enter hours: "))
+per_hour = int(input("Enter rate per hour: "))
+
+print(f"Your weekly earning is {hours * per_hour}")
+
+years = int(input("Enter number of years: "))
+print(f"You have lived for {years * 31536000} seconds")
+
+for i in range(1, 6):
+    print(i, 1, i**2, i**3)
+
+    """
+    i = 1 → 1 1 1 1 1
+
+    i = 2 → 2 1 2 4 8
+
+    i = 3 → 3 1 3 9 27
+
+    i = 4 → 4 1 4 16 64
+
+    i = 5 → 5 1 5 25 125
+    """
